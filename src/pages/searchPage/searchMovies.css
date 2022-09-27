@@ -1,0 +1,48 @@
+.search_page {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+}
+
+.search_page_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+input {
+  width: 60%;
+  padding: 8px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  color: rgb(105, 105, 105);
+}
+
+.submit {
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.submit:hover {
+  background-color: cadetblue;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.search_page_card {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

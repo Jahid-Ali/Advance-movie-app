@@ -1,0 +1,95 @@
+.header {
+  padding: 0.6rem 4rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(35, 35, 35);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  max-width: 100vw;
+}
+
+.header_icon {
+  width: 115px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.headerRight {
+  display: none;
+}
+
+.navOpen {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40%;
+  height: 80vh;
+  background-color: cornflowerblue;
+  z-index: 10;
+}
+
+.navOpenModify {
+  background-color: rgb(123, 230, 194);
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a > span {
+  margin: 0 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: rgb(243, 243, 243);
+  padding: 7.5px 5px;
+  border-radius: 4px;
+}
+
+a > span:hover {
+  background-color: rgb(59, 59, 59);
+}
+
+.fa {
+  color: rgb(255, 255, 255);
+}
+
+.burger {
+  cursor: pointer;
+  z-index: 10;
+}
+
+@media (min-width: 1180px) {
+  .burger {
+    display: none;
+  }
+  .headerRight {
+    display: flex;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 390px) {
+  .header {
+    gap: 2rem;
+  }
+
+  a > span {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  }
+}
