@@ -7,15 +7,9 @@ const MovieList = () => {
   const [movieList, setMovieList] = useState([]);
   const { type } = useParams();
 
-  const YOUR_APP_ID = process.env.REACT_APP_Application_ID;
-
   useEffect(() => {
     getData();
   });
-
-  useEffect(() => {
-    getData();
-  }, [type]);
 
   const getData = () => {
     fetch(

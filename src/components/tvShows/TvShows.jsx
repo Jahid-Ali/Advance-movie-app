@@ -11,9 +11,9 @@ const TvShows = () => {
     getData();
   });
 
-  useEffect(() => {
-    getData();
-  }, [type]);
+  // useEffect(() => {
+  //   getData();
+  // }, [type]);
 
   const getData = () => {
     fetch(
